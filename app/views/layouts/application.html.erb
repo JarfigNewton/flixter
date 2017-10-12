@@ -15,7 +15,7 @@
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#">Flixter</a>
+        <a class="navbar-brand" href="<%= root_path %>">Flixter</a>
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav mr-auto mt-2 mt-md-0">
@@ -58,41 +58,36 @@
       <div class="container">
         <div class="row">
           <div class="col-12 col-sm-3">
-            <b>Teachers</b>
+            <b><u>Teachers</u></b>
             <br />
             <%= link_to 'Teach a Course', new_instructor_course_path %>
             <br />
             <%= link_to 'My Dashboard', dashboard_path %>
           </div>
           <div class="col-12 col-sm-3">
-            <b>About</b>
+            <b><u>About</u></b>
             <br />
-            <%= link_to 'Team', '#' %>
+            <%= link_to 'Team', team_path %>
             <br />
-            <%= link_to 'Careers', '#' %>
-            <br />
-            <%= link_to 'Privacy Policy', '#' %>
+            <%= link_to 'Privacy Policy', privacy_path %>
           </div>
           <div class="col-12 col-sm-3">
-            <b>Contact</b>
+            <b><u>Contact</u></b>
             <br />
             jaredschil@gmail.com
-            <br />
-            No Address
             <br />
             Las Vegas, NV
           </div>
           <div class="col-12 col-sm-3 social">
-            <b>Social</b>
-            <br />
+            <b><u>Social</u></b>
             <br />
             <%= link_to 'https://github.com/JarfigNewton' do %>
               <span class="fa fa-github-square fa-2x social-button"></span>
             <% end %>
-            <%= link_to '#' do %>
+            <%= link_to 'https://www.facebook.com/' do %>
               <span class="fa fa-facebook-square fa-2x social-button"></span>
             <% end %>
-            <%= link_to '#' do %>
+            <%= link_to 'https://twitter.com/' do %>
               <span class="fa fa-twitter-square fa-2x social-button"></span>
             <% end %>
           </div>
